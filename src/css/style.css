@@ -1,0 +1,136 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.card{
+    background-color: hsl(225, 100%, 98%);
+    width: 380px;
+    height: 568px;
+    border-radius: 25px;
+}
+
+.card .image-hero{
+    width: 380px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+
+.card .info .info-public{
+    text-align: center;
+}
+
+.card .info .info-public .title{
+    padding: 27px;
+    padding-bottom: 18px;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.card .info .info-public .description{
+    padding: 0 43px 25px 43px;
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+}
+
+.card .plan{
+    display: flex;
+    padding-top: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .plan .icon-music{
+    width: 45px;
+}
+
+.card .plan .info-plan{
+    margin-right: 66px;
+    margin-left: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.card .plan .info-plan .title-plan{
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.card .plan .info-plan .price-plan{
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+    padding-top: 1px;
+}
+
+.card .plan .change{
+    display: flex;
+    align-items: center;
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+}
+
+.card .plan .change:hover{
+    color: hsl(224, 23%, 55%);
+}
+
+.card .info .buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 43px 0 43px 0;
+}
+
+.card .info .buttons .proceed{
+    color: aliceblue;
+    background-color: blue;
+    width: 300px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.card .info .buttons .proceed:hover{
+    background-color: hsl(224, 23%, 55%);
+}
+
+.card .info .buttons .cancel{
+    color: hsl(224, 23%, 55%);
+}
+
+.card .info .buttons .cancel:hover{
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+}
+
+@media(max-width: 375px){
+    body{
+        background-image: url(../images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+    }
+    
+    .card{
+        display: flex;
+        flex-wrap: wrap;
+        width: 330px;
+    }
+
+    .card .image-hero{
+        width: 100%;
+    }
+}
